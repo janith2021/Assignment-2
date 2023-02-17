@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js"></script>
+    <!-- <script>
+        window.history.forward();
+    </script> -->
+</head>
+<body>
+    <!-- navigation bar start -->
+    <div class="navbar">
+        <h1>ADMIN DASHBOARD</h1>
+        <button class="add" onclick="add()">Add User</button>
+        <button class="out" onclick="out()">Sign Out</button>
+    </div>
+    <!-- navigation bar end -->
+    <!-- user details card start  -->
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="images/user.png">
+            </div>
+            <div class="description">
+                <p>Janith</p>
+                <p>Matara</p>
+                <p>0703945012</p>
+            </div>
+        </div>
+        <div class="card card2" id="card1">
+            <div class="image">
+                <img src="images/user.png">
+            </div>
+            <div class="description">
+                <p id="nam"></p>
+                <p id="cit"></p>
+                <p id="pho"></p>
+            </div>
+        </div>
+    </div>
+    <!-- user details card end  -->
+    <!-- popup form start  -->
+    <div id="adduser" class="popup">
+        <h1>Add Student</h1>
+        <form action="#">
+            <input type="text" placeholder="Name" id="name">
+            <input type="text" placeholder="User Name">
+            <input type="text" placeholder="City" id="city">
+            <input type="text" placeholder="Phone Number" id="phone">
+            <input type="password" placeholder="Password" id="password">
+            <input type="password" placeholder="Confirm Password" id="confirm" oninput="match()">
+            <label id="error"></label>
+            <button class="sub" onclick="sub()">Create User</button>
+            <button class="back" onclick="back()">Back</button>
+        </form>
+    </div>
+    <!-- popup form end  -->
+</body>
+</html>

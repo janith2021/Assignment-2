@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+body{
+    /* background-image: linear-gradient(#93A5CF, #E4EfE9); */
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+}
+/* login form container  */
+.container{
+    padding: 60px;
+    display: flex;
+    min-width: 50vw;
+    min-height: 30vh;
+    flex-direction: row;
+    background-color: rgb(0, 0, 0, 0.1);
+    margin: 10vh 20vw;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    /* box-shadow: 5px 5px rgb(0, 0, 0, 0.3) ; */
+}
+/* image including area of the login form  */
+.imagearea{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("images/loginimage\ \(2\).jpg");
+    box-shadow: 2px 5px;
+    width: 50%;
+    /*border-right: 2px solid black;
+    */border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+/* form data input area  */
+.inputarea{
+    text-align: center;
+    width: 50%;
+}
+/* topic of the form data input area  */
+.inputarea h1{
+    font-size: 3em;
+    /* background-color: crimson; */
+    font-family: 'PT Sans Caption', sans-serif;
+    color: rgba(64, 64, 122, 1.0);
+}
+
+.inputarea form{
+    position: relative;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.inputarea input{
+    margin-bottom: 2vh;
+    font-size: 1.5em;
+    padding: 10px;
+    /* background-color: rgb(0, 0, 0, 0.3) ; */
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 3px 3px;
+    color: black;
+}
+.inputarea label{
+    position: relative;
+    font-size: 1.2rem;
+    margin: 5px 10px;
+    color: red;
+    font-family: 'Phudu', cursive;
+}
+.button{
+    align-self: center;
+    font-size: 1em;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: red;
+    color: aliceblue;
+    width: 50%;
+    font-size: 1.5em;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    /* animation:blink  5s ; */
+    /* -webkit-animation:blink 0.5s infinite; */
+}
+.button:hover{
+    background-color: blue;
+}
+
+.inputarea input:hover{
+    border: 2px solid red;
+}

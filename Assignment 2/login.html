@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" style="background-size: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+    <!-- google fonts start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&family=Phudu&family=Righteous&display=swap" rel="stylesheet">
+    <!-- google fonts end-->
+    <!-- <script>
+        window.history.forward();
+    </script> -->
+</head>
+<body>
+    <!-- login container start-->
+    <div class="container">
+        <!-- image area  -->
+        <div class="imagearea">
+        
+        </div>
+        <!-- image area end  -->
+        <!-- input area start  -->
+        <div class="inputarea">
+            <h1>Login</h1>
+            <form method="post">
+                <label id="error"></label>
+                <input type="text" name="user" id="user" placeholder="User Name">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <button type="button" class="button" onclick="validate()">Login</button>
+            </form>
+        </div>
+        <!-- input area end  -->
+    </div>
+    <!-- login container end -->
+</body>
+</html>

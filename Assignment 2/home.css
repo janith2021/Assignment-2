@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+}
+/* navigation bar css start*/
+.navbar{
+    background-color: rgb(0, 0, 255);
+    padding: 2vh;
+    color: beige;
+    box-shadow: 5px 5px rgb(0, 0, 255,0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.navbar h1{
+    font-size: 2.5em;
+   margin-left: 35vw;
+}
+/* navigation bar button properties */
+.navbar button{
+    padding: 10px 40px;
+    cursor: pointer;
+}
+/* add new user button  */
+.add{
+    margin-right: -150px;
+    background-color: greenyellow;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 1.5em;
+}
+/* sign out button  */
+.out{
+    background-color: red;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 1.5em;
+}
+/* add new user button hover  */
+.add:hover{
+    background-color: rgb(0, 100, 88);
+    color: white;
+}
+/* sign out button hover */
+.out:hover{
+    background-color: darkred;
+    color: white;
+}
+/* navigation bar css end*/
+.container{
+    margin: 3vh 20vw;
+    border-radius: 10px;
+    padding: 50px;
+    background-color: rgb(0, 0, 0,0.3);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+/* user details card properties */
+.card{
+    display: flex;
+    flex-direction: column;
+    max-width: 18vw;
+    min-height: 55vh;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+/* card hover effect */
+.card:hover{
+    opacity: 0.6;
+}
+/* card image  */
+.image{
+    background-size: cover;
+}
+/* contain image of the image area  */
+.image img{
+    width: 100%;
+}
+/* card description  */
+.description{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+/* popup box css properties */
+.popup{
+    text-align: center;
+    position: relative;
+    margin: -70vh 30vw;
+    padding: 10px 100px 100px;
+    width: 30vw;
+    height: 45vh;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 5px 5px black;
+    visibility: hidden;
+    position: relative;
+    animation-name: add;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+/* popup form  */
+.popup form{
+    display: flex;
+    flex-direction: column;
+}
+.popup form input{
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 5px;
+    height: 30px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.popup form input:hover {
+    border:solid red;
+}
+
+.popup form button{
+    margin: 5px 100px;
+    padding: 5px;
+    cursor: pointer;
+    
+}
+/* user details submit button */
+.sub{
+ background-color: blue;
+ border-radius: 10px;
+ font-size: 1.5em;
+ -webkit-border-radius: 10px;
+ -moz-border-radius: 10px;
+ -ms-border-radius: 10px;
+ -o-border-radius: 10px;
+}
+/* exit from the popup form  */
+.back {
+background-color: red;
+border-radius: 10px;
+font-size: 1.5em;
+}
+.sub:hover{
+    background-color: chartreuse;
+    color: red;
+}
+.back:hover{
+    background-color: yellow;
+    color: blue;
+}
+.card2{
+    display: none;
+}
+/* showing errors label  */
+#error{
+    color: red;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+@keyframes add{
+    0%{
+        margin: -200vh 30vw;
+    }
+    25%{
+        margin: -100vh 30vw;
+    }
+    50%{
+        margin: -90vh 30vw;
+    }
+    100%{
+        margin: -70vh 30vw;
+    }
+}
